@@ -1,0 +1,7 @@
+<testsuites time="0.148844383">
+    <testsuite name="example_test" tests="2" time="0.148844383" timestamp="2025-09-29T18:33:56+05:30">
+        <properties></properties>
+        <testcase name="test_addition" classname="test_example.TestExample" time="0.005"></testcase>
+        <testcase name="test_subtraction" classname="test_example.TestExample" time="0"></testcase>
+    </testsuite>
+</testsuites>

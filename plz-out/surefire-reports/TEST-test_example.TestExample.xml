@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_example.TestExample" tests="2" file="test_example.py" time="0.005" timestamp="2025-09-29T18:33:56" failures="0" errors="0" skipped="0">
+	<testcase classname="test_example.TestExample" name="test_addition" time="0.005" timestamp="2025-09-29T18:33:56" file="example_test.pex/test_example.py" line="4">
+		<!--Test basic addition-->
+	</testcase>
+	<testcase classname="test_example.TestExample" name="test_subtraction" time="0.000" timestamp="2025-09-29T18:33:56" file="example_test.pex/test_example.py" line="8">
+		<!--Test basic subtraction-->
+	</testcase>
+</testsuite>

@@ -1,0 +1,348 @@
+18:33:53.147   DEBUG: Attempting to read config from /etc/please/plzconfig...
+18:33:53.147   DEBUG: Attempting to read config from /home/rhea31/.config/please/plzconfig...
+18:33:53.147   DEBUG: Attempting to read config from /home/rhea31/please-demo/.plzconfig...
+18:33:53.148   DEBUG: Read config from /home/rhea31/please-demo/.plzconfig
+18:33:53.148   DEBUG: Attempting to read config from /home/rhea31/please-demo/.plzconfig_linux_amd64...
+18:33:53.148   DEBUG: Attempting to read config from /home/rhea31/please-demo/.plzconfig.local...
+18:33:53.150   DEBUG: plz test
+18:33:53.153   DEBUG: Attempting to acquire lock for plz-out/.lock...
+18:33:53.154   DEBUG: Acquired lock for plz-out/.lock
+18:33:53.156    INFO: Total cache size: 0 B
+18:33:53.156   DEBUG: Loading built-in build rules...
+18:33:53.166   DEBUG: parser initialised
+18:33:53.166   DEBUG: Original target scan complete
+18:33:53.167   DEBUG: Registering subrepo python in package //plugins:all
+18:33:53.169   DEBUG: Attempting to acquire lock for plz-out/tmp/plugins/_python#download._build.lock...
+18:33:53.169   DEBUG: Acquired lock for plz-out/tmp/plugins/_python#download._build.lock
+18:33:53.169   DEBUG: Need to rebuild //plugins:_python#download, metadata file is missing
+18:33:53.169   DEBUG: Attempting to acquire lock for plz-out/tmp/_please/arcat._build.lock...
+18:33:53.169   DEBUG: Acquired lock for plz-out/tmp/_please/arcat._build.lock
+18:33:53.170   DEBUG: Need to rebuild //_please:arcat, metadata file is missing
+18:33:53.172   DEBUG: //_please:arcat: /home/rhea31/.cache/please/_please/arcat/BFylv2E8Cvd0W9P_MEt3kTf53Qk= doesn't exist in dir cache
+18:33:53.172   DEBUG: Nothing retrieved from remote cache for //_please:arcat
+18:33:53.172   DEBUG: //plugins:_python#download: /home/rhea31/.cache/please/plugins/_python#download/JlPEJNl_Ypp_kRK3cZzXSMp2s8U= doesn't exist in dir cache
+18:33:53.172   DEBUG: Nothing retrieved from remote cache for //plugins:_python#download
+18:33:53.172   DEBUG: performing request: [method GET url https://github.com/please-build/arcat/releases/download/v1.0.2/arcat-1.0.2-linux_amd64]
+18:33:53.172   DEBUG: performing request: [method GET url https://github.com/please-build/python-rules/archive/v1.13.0.zip]
+18:33:53.816   DEBUG: Outputs for //_please:arcat have changed
+18:33:53.850   DEBUG: Storing //_please:arcat: arcat in dir cache...
+18:33:53.852   DEBUG: Storing //_please:arcat: .target_build_metadata_arcat in dir cache...
+18:33:54.023   DEBUG: Outputs for //plugins:_python#download have changed
+18:33:54.027   DEBUG: Storing //plugins:_python#download: python_v1.13.0.zip in dir cache...
+18:33:54.028   DEBUG: Attempting to acquire lock for plz-out/tmp/plugins/python._build.lock...
+18:33:54.028   DEBUG: Acquired lock for plz-out/tmp/plugins/python._build.lock
+18:33:54.028   DEBUG: Need to rebuild //plugins:python, metadata file is missing
+18:33:54.032   DEBUG: Storing //plugins:_python#download: .target_build_metadata__python#download in dir cache...
+18:33:54.032   DEBUG: //plugins:python: /home/rhea31/.cache/please/plugins/python/6evllPTvUazen74hVd-rSiQCy7s= doesn't exist in dir cache
+18:33:54.032   DEBUG: Nothing retrieved from remote cache for //plugins:python
+18:33:54.034   DEBUG: Building target //plugins:python
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/plugins/python._build LANG=en_GB.UTF-8 NAME=python OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/plugins/python._build/python OUTS=python PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG=plugins PKG_DIR=plugins PYTHONHASHSEED=42 RULE_HASH=6evllPTvUazen74hVd-rSiQCy7s SRC=plugins/python_v1.13.0.zip SRCS=plugins/python_v1.13.0.zip TMPDIR=/home/rhea31/please-demo/plz-out/tmp/plugins/python._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/plugins/python._build TOOL=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat XARCH=x86_64 XOS=linux]
+$TOOL x "$SRCS" -o _tmp && mv $(dirname $(ls _tmp/*/.plzconfig)) "$OUT"
+18:33:54.193   DEBUG: Outputs for //plugins:python have changed
+18:33:54.210   DEBUG: Storing //plugins:python: python in dir cache...
+18:33:54.211   DEBUG: Attempting to read config from .plzconfig...
+18:33:54.233   DEBUG: Read config from .plzconfig
+18:33:54.237   DEBUG: Attempting to acquire lock for plz-out/tmp/python/build_defs/python._build.lock...
+18:33:54.237   DEBUG: Acquired lock for plz-out/tmp/python/build_defs/python._build.lock
+18:33:54.237   DEBUG: Building ///python//build_defs:python...
+18:33:54.241   DEBUG: Loading configuration for plugin python
+18:33:54.250   DEBUG: Loading configuration for plugin python
+18:33:54.251   DEBUG: Loading configuration for plugin python
+18:33:54.252   DEBUG: Attempting to acquire lock for plz-out/tmp/_example_test#lib_zip._build.lock...
+18:33:54.252   DEBUG: Acquired lock for plz-out/tmp/_example_test#lib_zip._build.lock
+18:33:54.252   DEBUG: Need to rebuild //:_example_test#lib_zip, metadata file is missing
+18:33:54.252   DEBUG: Loading configuration for plugin python
+18:33:54.253   DEBUG: Attempting to acquire lock for plz-out/tmp/python/build_defs/version._build.lock...
+18:33:54.253   DEBUG: Acquired lock for plz-out/tmp/python/build_defs/version._build.lock
+18:33:54.253   DEBUG: Building ///python//build_defs:version...
+18:33:54.253   DEBUG: Loading configuration for plugin python
+18:33:54.254   DEBUG: Attempting to acquire lock for plz-out/tmp/python/build_defs/multiversion_wheel._build.lock...
+18:33:54.254   DEBUG: Acquired lock for plz-out/tmp/python/build_defs/multiversion_wheel._build.lock
+18:33:54.254   DEBUG: Loading configuration for plugin python
+18:33:54.254   DEBUG: Building ///python//build_defs:multiversion_wheel...
+18:33:54.254   DEBUG: Loading configuration for plugin python
+18:33:54.255   DEBUG: Loading configuration for plugin python
+18:33:54.256   DEBUG: Loading configuration for plugin python
+18:33:54.257   DEBUG: Attempting to acquire lock for plz-out/tmp/python/tools/please_pex._build.lock...
+18:33:54.257   DEBUG: Acquired lock for plz-out/tmp/python/tools/please_pex._build.lock
+18:33:54.257   DEBUG: Loading configuration for plugin python
+18:33:54.257   DEBUG: Need to rebuild ///python//tools:please_pex, metadata file is missing
+18:33:54.259   DEBUG: Storing //plugins:python: .target_build_metadata_python in dir cache...
+18:33:54.262   DEBUG: ///python//tools:please_pex: /home/rhea31/.cache/please/tools/please_pex/z8F9_lr_7dEyG4-vu00VpF3wdPE= doesn't exist in dir cache
+18:33:54.262   DEBUG: Nothing retrieved from remote cache for ///python//tools:please_pex
+18:33:54.262   DEBUG: performing request: [method GET url https://github.com/please-build/python-rules/releases/download/tools-v1.6.2/please_pex-1.6.2-linux_amd64]
+18:33:54.268   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_coverage#2._build.lock...
+18:33:54.268   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_coverage#3._build.lock...
+18:33:54.268   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_coverage#2._build.lock
+18:33:54.268   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_coverage#3._build.lock
+18:33:54.268   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_coverage#5._build.lock...
+18:33:54.268   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_xmlrunner#download._build.lock...
+18:33:54.268   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_xmlrunner#download._build.lock
+18:33:54.268   DEBUG: Need to rebuild ///python//third_party/python:_coverage#3, metadata file is missing
+18:33:54.268   DEBUG: Need to rebuild ///python//third_party/python:_coverage#2, metadata file is missing
+18:33:54.268   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_coverage#4._build.lock...
+18:33:54.268   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_coverage#4._build.lock
+18:33:54.268   DEBUG: Need to rebuild ///python//third_party/python:_xmlrunner#download, metadata file is missing
+18:33:54.268   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_portalocker#download._build.lock...
+18:33:54.268   DEBUG: Need to rebuild ///python//third_party/python:_coverage#4, metadata file is missing
+18:33:54.268   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_portalocker#download._build.lock
+18:33:54.268   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_coverage#5._build.lock
+18:33:54.268   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_coverage#1._build.lock...
+18:33:54.268   DEBUG: Need to rebuild ///python//third_party/python:_coverage#5, metadata file is missing
+18:33:54.268   DEBUG: Need to rebuild ///python//third_party/python:_portalocker#download, metadata file is missing
+18:33:54.268   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_coverage#1._build.lock
+18:33:54.268   DEBUG: Need to rebuild ///python//third_party/python:_coverage#1, metadata file is missing
+18:33:54.269   DEBUG: ///python//third_party/python:_coverage#2: /home/rhea31/.cache/please/third_party/python/_coverage#2/pJdcH15nRo_cZyOC0XJH0ftLKNY= doesn't exist in dir cache
+18:33:54.270   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_coverage#2
+18:33:54.270   DEBUG: ///python//third_party/python:_coverage#3: /home/rhea31/.cache/please/third_party/python/_coverage#3/KWtBXyvu_gP261C0krMV6v3PT0w= doesn't exist in dir cache
+18:33:54.270   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_coverage#3
+18:33:54.270   DEBUG: performing request: [method GET url https://files.pythonhosted.org/packages/cp310/c/coverage/coverage-7.6.4-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl]
+18:33:54.270   DEBUG: performing request: [method GET url https://files.pythonhosted.org/packages/cp311/c/coverage/coverage-7.6.4-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl]
+18:33:54.270   DEBUG: ///python//third_party/python:_xmlrunner#download: /home/rhea31/.cache/please/third_party/python/_xmlrunner#download/kZrFJDKIsnTPOpAr-S7-2xQwXTo= doesn't exist in dir cache
+18:33:54.270   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_xmlrunner#download
+18:33:54.270   DEBUG: performing request: [method GET url https://get.please.build/third_party/python/py3/unittest_xml_reporting-3.2.0-linux_amd64.whl]
+18:33:54.271   DEBUG: ///python//third_party/python:_coverage#4: /home/rhea31/.cache/please/third_party/python/_coverage#4/dssgVQVvVEmWt8OaHvQBPKlJ8TA= doesn't exist in dir cache
+18:33:54.271   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_coverage#4
+18:33:54.272   DEBUG: ///python//third_party/python:_portalocker#download: /home/rhea31/.cache/please/third_party/python/_portalocker#download/TgGcdMlQsMJdDHCJEPF9FobDtxA= doesn't exist in dir cache
+18:33:54.272   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_portalocker#download
+18:33:54.273   DEBUG: ///python//third_party/python:_coverage#1: /home/rhea31/.cache/please/third_party/python/_coverage#1/mXhjCS-Z4qlv8Mt6SdQ2VJpR5pk= doesn't exist in dir cache
+18:33:54.273   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_coverage#1
+18:33:54.274   DEBUG: ///python//third_party/python:_coverage#5: /home/rhea31/.cache/please/third_party/python/_coverage#5/324By6Ul26BaP9rO_8eETH9glVc= doesn't exist in dir cache
+18:33:54.274   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_coverage#5
+18:33:54.291   DEBUG: //:_example_test#lib_zip: /home/rhea31/.cache/please/_example_test#lib_zip/1-sfbk0Ol_nTleytalIqhx5-S5w= doesn't exist in dir cache
+18:33:54.291   DEBUG: Nothing retrieved from remote cache for //:_example_test#lib_zip
+18:33:54.291   DEBUG: Building target //:_example_test#lib_zip
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/_example_test#lib_zip._build LANG=en_GB.UTF-8 NAME=_example_test#lib_zip OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/_example_test#lib_zip._build/._example_test#lib.pex.zip OUTS=._example_test#lib.pex.zip PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG= PKG_DIR=. PYTHONHASHSEED=42 RULE_HASH=1-sfbk0Ol_nTleytalIqhx5-S5w SRC=test_example.py SRCS=test_example.py SRCS_SRCS=test_example.py TMPDIR=/home/rhea31/please-demo/plz-out/tmp/_example_test#lib_zip._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/_example_test#lib_zip._build TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat /usr/bin/python3 TOOLS_ARCAT=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS_INT=/usr/bin/python3 XARCH=x86_64 XOS=linux]
+$TOOLS_INT -S -m compileall -b -f $SRCS_SRCS && $TOOLS_ARCAT z -d -o ${OUTS} -i .
+18:33:54.355   DEBUG: Outputs for ///python//third_party/python:_coverage#2 have changed
+18:33:54.355   DEBUG: performing request: [method GET url https://files.pythonhosted.org/packages/cp312/c/coverage/coverage-7.6.4-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl]
+18:33:54.358   DEBUG: Storing ///python//third_party/python:_coverage#2: coverage-7.6.4-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl in dir cache...
+18:33:54.361   DEBUG: Storing ///python//third_party/python:_coverage#2: .target_build_metadata__coverage#2 in dir cache...
+18:33:54.364   DEBUG: performing request: [method GET url https://get.please.build/third_party/python/py3/portalocker-1.7.0-linux_amd64.whl]
+18:33:54.364   DEBUG: Outputs for ///python//third_party/python:_coverage#3 have changed
+18:33:54.367   DEBUG: Storing ///python//third_party/python:_coverage#3: coverage-7.6.4-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl in dir cache...
+18:33:54.368   DEBUG: Storing ///python//third_party/python:_coverage#3: .target_build_metadata__coverage#3 in dir cache...
+18:33:54.377   DEBUG: Outputs for //:_example_test#lib_zip have changed
+18:33:54.378   DEBUG: Storing //:_example_test#lib_zip: ._example_test#lib.pex.zip in dir cache...
+18:33:54.380   DEBUG: Storing //:_example_test#lib_zip: .target_build_metadata__example_test#lib_zip in dir cache...
+18:33:54.380   DEBUG: Outputs for ///python//third_party/python:_coverage#4 have changed
+18:33:54.380   DEBUG: performing request: [method GET url https://files.pythonhosted.org/packages/cp39/c/coverage/coverage-7.6.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl]
+18:33:54.382   DEBUG: Storing ///python//third_party/python:_coverage#4: coverage-7.6.4-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl in dir cache...
+18:33:54.383   DEBUG: Storing ///python//third_party/python:_coverage#4: .target_build_metadata__coverage#4 in dir cache...
+18:33:54.401   DEBUG: performing request: [method GET url https://files.pythonhosted.org/packages/cp313/c/coverage/coverage-7.6.4-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl]
+18:33:54.401   DEBUG: Outputs for ///python//third_party/python:_coverage#1 have changed
+18:33:54.403   DEBUG: Storing ///python//third_party/python:_coverage#1: coverage-7.6.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl in dir cache...
+18:33:54.405   DEBUG: Storing ///python//third_party/python:_coverage#1: .target_build_metadata__coverage#1 in dir cache...
+18:33:54.422   DEBUG: Outputs for ///python//third_party/python:_coverage#5 have changed
+18:33:54.425   DEBUG: Storing ///python//third_party/python:_coverage#5: coverage-7.6.4-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl in dir cache...
+18:33:54.426   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/coverage._build.lock...
+18:33:54.426   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/coverage._build.lock
+18:33:54.426   DEBUG: Need to rebuild ///python//third_party/python:coverage, metadata file is missing
+18:33:54.427   DEBUG: Storing ///python//third_party/python:_coverage#5: .target_build_metadata__coverage#5 in dir cache...
+18:33:54.427   DEBUG: ///python//third_party/python:coverage: /home/rhea31/.cache/please/third_party/python/coverage/OZdWWtGBNCBFg1t9tblA5hSLksI= doesn't exist in dir cache
+18:33:54.427   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:coverage
+18:33:54.430   DEBUG: Building target ///python//third_party/python:coverage
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/coverage._build LANG=en_GB.UTF-8 NAME=coverage OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/coverage._build/coverage OUTS=coverage PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG=third_party/python PKG_DIR=third_party/python PYTHONHASHSEED=42 RULE_HASH=OZdWWtGBNCBFg1t9tblA5hSLksI SRCS=third_party/python/coverage-7.6.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl third_party/python/coverage-7.6.4-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl third_party/python/coverage-7.6.4-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl third_party/python/coverage-7.6.4-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl third_party/python/coverage-7.6.4-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl TMPDIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/coverage._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/coverage._build TOOL=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat XARCH=x86_64 XOS=linux]
+for SRC in $SRCS; do $TOOL x -o $TMP_DIR $SRC; done
+18:33:54.530   DEBUG: Outputs for ///python//third_party/python:coverage have changed
+18:33:54.542   DEBUG: Storing ///python//third_party/python:coverage: coverage in dir cache...
+18:33:54.546   DEBUG: Storing ///python//third_party/python:coverage: .target_build_metadata_coverage in dir cache...
+18:33:54.913   DEBUG: Outputs for ///python//tools:please_pex have changed
+18:33:54.967   DEBUG: Storing ///python//tools:please_pex: please_pex-1.6.2-linux_amd64 in dir cache...
+18:33:54.968   DEBUG: Storing ///python//tools:please_pex: .target_build_metadata_please_pex in dir cache...
+18:33:55.615   DEBUG: Error retrieving https://get.please.build/third_party/python/py3/unittest_xml_reporting-3.2.0-linux_amd64.whl: 404 Not Found, Body:
+<?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message></Error>
+18:33:55.615   DEBUG: performing request: [method GET url https://get.please.build/third_party/python/py3/unittest_xml_reporting-3.2.0.whl]
+18:33:55.678   DEBUG: Error retrieving https://get.please.build/third_party/python/py3/portalocker-1.7.0-linux_amd64.whl: 404 Not Found, Body:
+<?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message></Error>
+18:33:55.678   DEBUG: performing request: [method GET url https://get.please.build/third_party/python/py3/portalocker-1.7.0.whl]
+18:33:55.690   DEBUG: Outputs for ///python//third_party/python:_portalocker#download have changed
+18:33:55.692   DEBUG: Storing ///python//third_party/python:_portalocker#download: portalocker.whl in dir cache...
+18:33:55.693   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_portalocker#wheel._build.lock...
+18:33:55.693   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_portalocker#wheel._build.lock
+18:33:55.693   DEBUG: Need to rebuild ///python//third_party/python:_portalocker#wheel, metadata file is missing
+18:33:55.695   DEBUG: ///python//third_party/python:_portalocker#wheel: /home/rhea31/.cache/please/third_party/python/_portalocker#wheel/64vTae75l4ZNgg_PCww3EcoblIE= doesn't exist in dir cache
+18:33:55.695   DEBUG: Storing ///python//third_party/python:_portalocker#download: .target_build_metadata__portalocker#download in dir cache...
+18:33:55.695   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_portalocker#wheel
+18:33:55.699   DEBUG: Building target ///python//third_party/python:_portalocker#wheel
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_portalocker#wheel._build LANG=en_GB.UTF-8 NAME=_portalocker#wheel OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_portalocker#wheel._build/portalocker.pex.zip OUTS=portalocker.pex.zip PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG=third_party/python PKG_DIR=third_party/python PYTHONHASHSEED=42 RULE_HASH=64vTae75l4ZNgg_PCww3EcoblIE SRC=third_party/python/portalocker.whl SRCS=third_party/python/portalocker.whl SRCS_SRC=third_party/python/portalocker.whl TMPDIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_portalocker#wheel._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_portalocker#wheel._build TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat /usr/bin/python3 TOOLS_ARCAT=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS_PYTHON=/usr/bin/python3 XARCH=x86_64 XOS=linux]
+$TOOLS_ARCAT x $SRCS_SRC && find . -name "*.pyc" -or -name "tests" | xargs rm -rf && $TOOLS_PYTHON -m compileall -b -f . && $TOOLS_ARCAT z -d --prefix $PKG -i portalocker
+18:33:55.803   DEBUG: Outputs for ///python//third_party/python:_portalocker#wheel have changed
+18:33:55.803   DEBUG: Storing ///python//third_party/python:_portalocker#wheel: portalocker.pex.zip in dir cache...
+18:33:55.804   DEBUG: Storing ///python//third_party/python:_portalocker#wheel: .target_build_metadata__portalocker#wheel in dir cache...
+18:33:55.805   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/portalocker._build.lock...
+18:33:55.805   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/portalocker._build.lock
+18:33:55.805   DEBUG: Need to rebuild ///python//third_party/python:portalocker, metadata file is missing
+18:33:55.805   DEBUG: ///python//third_party/python:portalocker: /home/rhea31/.cache/please/third_party/python/portalocker/OzH8x0XY1ry43ZJa6LHTPIOPtxs= doesn't exist in dir cache
+18:33:55.805   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:portalocker
+18:33:55.806   DEBUG: Building target ///python//third_party/python:portalocker
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/portalocker._build LANG=en_GB.UTF-8 NAME=portalocker OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/portalocker._build/portalocker OUTS=portalocker PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG=third_party/python PKG_DIR=third_party/python PYTHONHASHSEED=42 RULE_HASH=OzH8x0XY1ry43ZJa6LHTPIOPtxs SRC=third_party/python/portalocker.pex.zip SRCS=third_party/python/portalocker.pex.zip TMPDIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/portalocker._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/portalocker._build TOOL=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat XARCH=x86_64 XOS=linux]
+$TOOL x $SRCS -s $PKG_DIR
+18:33:55.818   DEBUG: Outputs for ///python//third_party/python:portalocker have changed
+18:33:55.823   DEBUG: Storing ///python//third_party/python:portalocker: portalocker in dir cache...
+18:33:55.824   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/test_bootstrap._build.lock...
+18:33:55.824   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/test_bootstrap._build.lock
+18:33:55.824   DEBUG: Building ///python//third_party/python:test_bootstrap...
+18:33:55.825   DEBUG: Storing ///python//third_party/python:portalocker: .target_build_metadata_portalocker in dir cache...
+18:33:55.979   DEBUG: Error retrieving https://get.please.build/third_party/python/py3/unittest_xml_reporting-3.2.0.whl: 404 Not Found, Body:
+<?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message></Error>
+18:33:55.979   DEBUG: performing request: [method GET url https://files.pythonhosted.org/packages/py3/u/unittest_xml_reporting/unittest_xml_reporting-3.2.0-py3-none-any.whl]
+18:33:56.336   DEBUG: performing request: [method GET url https://files.pythonhosted.org/packages/py2.py3/u/unittest_xml_reporting/unittest_xml_reporting-3.2.0-py2.py3-none-any.whl]
+18:33:56.352   DEBUG: Outputs for ///python//third_party/python:_xmlrunner#download have changed
+18:33:56.355   DEBUG: Storing ///python//third_party/python:_xmlrunner#download: xmlrunner.whl in dir cache...
+18:33:56.355   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/_xmlrunner#wheel._build.lock...
+18:33:56.356   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/_xmlrunner#wheel._build.lock
+18:33:56.356   DEBUG: Need to rebuild ///python//third_party/python:_xmlrunner#wheel, metadata file is missing
+18:33:56.358   DEBUG: ///python//third_party/python:_xmlrunner#wheel: /home/rhea31/.cache/please/third_party/python/_xmlrunner#wheel/twAYUWDZrHw8ay9-CzHHqiTZDOU= doesn't exist in dir cache
+18:33:56.358   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:_xmlrunner#wheel
+18:33:56.358   DEBUG: Storing ///python//third_party/python:_xmlrunner#download: .target_build_metadata__xmlrunner#download in dir cache...
+18:33:56.362   DEBUG: Building target ///python//third_party/python:_xmlrunner#wheel
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_xmlrunner#wheel._build LANG=en_GB.UTF-8 NAME=_xmlrunner#wheel OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_xmlrunner#wheel._build/xmlrunner.pex.zip OUTS=xmlrunner.pex.zip PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG=third_party/python PKG_DIR=third_party/python PYTHONHASHSEED=42 RULE_HASH=twAYUWDZrHw8ay9-CzHHqiTZDOU SRC=third_party/python/xmlrunner.whl SRCS=third_party/python/xmlrunner.whl SRCS_SRC=third_party/python/xmlrunner.whl TMPDIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_xmlrunner#wheel._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/_xmlrunner#wheel._build TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat /usr/bin/python3 TOOLS_ARCAT=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS_PYTHON=/usr/bin/python3 XARCH=x86_64 XOS=linux]
+$TOOLS_ARCAT x $SRCS_SRC && find . -name "*.pyc" -or -name "tests" | xargs rm -rf && $TOOLS_PYTHON -m compileall -b -f . && $TOOLS_ARCAT z -d --prefix $PKG -i xmlrunner
+18:33:56.469   DEBUG: Outputs for ///python//third_party/python:_xmlrunner#wheel have changed
+18:33:56.470   DEBUG: Storing ///python//third_party/python:_xmlrunner#wheel: xmlrunner.pex.zip in dir cache...
+18:33:56.471   DEBUG: Storing ///python//third_party/python:_xmlrunner#wheel: .target_build_metadata__xmlrunner#wheel in dir cache...
+18:33:56.471   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/xmlrunner._build.lock...
+18:33:56.472   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/xmlrunner._build.lock
+18:33:56.472   DEBUG: Need to rebuild ///python//third_party/python:xmlrunner, metadata file is missing
+18:33:56.472   DEBUG: ///python//third_party/python:xmlrunner: /home/rhea31/.cache/please/third_party/python/xmlrunner/UtWCGI_qTYE9eYqKvZVV6oQYyX4= doesn't exist in dir cache
+18:33:56.472   DEBUG: Nothing retrieved from remote cache for ///python//third_party/python:xmlrunner
+18:33:56.473   DEBUG: Building target ///python//third_party/python:xmlrunner
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/xmlrunner._build LANG=en_GB.UTF-8 NAME=xmlrunner OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/xmlrunner._build/xmlrunner OUTS=xmlrunner PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG=third_party/python PKG_DIR=third_party/python PYTHONHASHSEED=42 RULE_HASH=UtWCGI_qTYE9eYqKvZVV6oQYyX4 SRC=third_party/python/xmlrunner.pex.zip SRCS=third_party/python/xmlrunner.pex.zip TMPDIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/xmlrunner._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/python/third_party/python/xmlrunner._build TOOL=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat XARCH=x86_64 XOS=linux]
+$TOOL x $SRCS -s $PKG_DIR
+18:33:56.484   DEBUG: Outputs for ///python//third_party/python:xmlrunner have changed
+18:33:56.490   DEBUG: Storing ///python//third_party/python:xmlrunner: xmlrunner in dir cache...
+18:33:56.491   DEBUG: Attempting to acquire lock for plz-out/tmp/python/third_party/python/unittest_bootstrap._build.lock...
+18:33:56.491   DEBUG: Acquired lock for plz-out/tmp/python/third_party/python/unittest_bootstrap._build.lock
+18:33:56.491   DEBUG: Building ///python//third_party/python:unittest_bootstrap...
+18:33:56.491   DEBUG: Running pre-build function for //:_example_test#pex
+18:33:56.491   DEBUG: Finished pre-build function for //:_example_test#pex
+18:33:56.491   DEBUG: Attempting to acquire lock for plz-out/tmp/_example_test#pex._build.lock...
+18:33:56.491   DEBUG: Acquired lock for plz-out/tmp/_example_test#pex._build.lock
+18:33:56.491   DEBUG: Need to rebuild //:_example_test#pex, metadata file is missing
+18:33:56.492   DEBUG: //:_example_test#pex: /home/rhea31/.cache/please/_example_test#pex/xE2QxVfr-IPi8Z0dNS-dpZ4uths= doesn't exist in dir cache
+18:33:56.492   DEBUG: Nothing retrieved from remote cache for //:_example_test#pex
+18:33:56.493   DEBUG: Storing ///python//third_party/python:xmlrunner: .target_build_metadata_xmlrunner in dir cache...
+18:33:56.495   DEBUG: Building target //:_example_test#pex
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/_example_test#pex._build LANG=en_GB.UTF-8 NAME=_example_test#pex OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/_example_test#pex._build/.example_test_main.pex.zip OUTS=.example_test_main.pex.zip PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG= PKG_DIR=. PYTHONHASHSEED=42 RULE_HASH=xE2QxVfr-IPi8Z0dNS-dpZ4uths SRC=test_example.py SRCS=test_example.py TMPDIR=/home/rhea31/please-demo/plz-out/tmp/_example_test#pex._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/_example_test#pex._build TOOLS=/usr/bin/python3 /home/rhea31/please-demo/plz-out/bin/python/tools/please_pex-1.6.2-linux_amd64 TOOLS_INTERPRETER=/usr/bin/python3 TOOLS_PEX=/home/rhea31/please-demo/plz-out/bin/python/tools/please_pex-1.6.2-linux_amd64 XARCH=x86_64 XOS=linux]
+$TOOLS_PEX -t -s "python3" -m "third_party.python" -r "unittest" --zip_safe --interpreter_options="" --stamp="$RULE_HASH"
+18:33:56.504   DEBUG: Outputs for //:_example_test#pex have changed
+18:33:56.505   DEBUG: Storing //:_example_test#pex: .example_test_main.pex.zip in dir cache...
+18:33:56.505   DEBUG: Storing //:_example_test#pex: .target_build_metadata__example_test#pex in dir cache...
+18:33:56.506   DEBUG: Attempting to acquire lock for plz-out/tmp/_example_test#lib._build.lock...
+18:33:56.506   DEBUG: Acquired lock for plz-out/tmp/_example_test#lib._build.lock
+18:33:56.506   DEBUG: Building //:_example_test#lib...
+18:33:56.506   DEBUG: Attempting to acquire lock for plz-out/tmp/example_test._build.lock...
+18:33:56.506   DEBUG: Acquired lock for plz-out/tmp/example_test._build.lock
+18:33:56.506   DEBUG: Need to rebuild //:example_test, metadata file is missing
+18:33:56.507   DEBUG: //:example_test: /home/rhea31/.cache/please/example_test/3JK-9FfJhFPInKzSGfmaLg-UxnM= doesn't exist in dir cache
+18:33:56.507   DEBUG: Nothing retrieved from remote cache for //:example_test
+18:33:56.510   DEBUG: Building target //:example_test
+ENVIRONMENT:
+[ARCH=amd64 BUILD_CONFIG=opt CONFIG=opt HOME=/home/rhea31/please-demo/plz-out/tmp/example_test._build LANG=en_GB.UTF-8 NAME=example_test OS=linux OUT=/home/rhea31/please-demo/plz-out/tmp/example_test._build/example_test.pex OUTS=example_test.pex PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin PKG= PKG_DIR=. PYTHONHASHSEED=42 RULE_HASH=3JK-9FfJhFPInKzSGfmaLg-UxnM SRC=.example_test_main.pex.zip SRCS=.example_test_main.pex.zip TMPDIR=/home/rhea31/please-demo/plz-out/tmp/example_test._build TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/example_test._build TOOL=/home/rhea31/please-demo/plz-out/bin/_please/arcat TOOLS=/home/rhea31/please-demo/plz-out/bin/_please/arcat XARCH=x86_64 XOS=linux]
+$TOOL z -i . -s .pex.zip -s .whl --preamble_from="$SRC" --include_other --add_init_py --strict
+18:33:56.574   DEBUG: Outputs for //:example_test have changed
+18:33:56.577   DEBUG: Storing //:example_test: example_test.pex in dir cache...
+18:33:56.578   DEBUG: Storing //:example_test: .target_build_metadata_example_test in dir cache...
+18:33:56.579   DEBUG: Attempting to acquire lock for plz-out/tmp/example_test._test/run_1.lock...
+18:33:56.579   DEBUG: Acquired lock for plz-out/tmp/example_test._test/run_1.lock
+18:33:56.579   DEBUG: Output file plz-out/bin/.test_results_example_test does not exist for //:example_test
+18:33:56.579   DEBUG: //:example_test: /home/rhea31/.cache/please/example_test/RcSmTBOhIL-en6bfJoWJaD3sl9g= doesn't exist in dir cache
+18:33:56.580   DEBUG: Running test //:example_test#1
+ENVIRONMENT:
+ARCH=amd64
+BUILD_CONFIG=opt
+CONFIG=opt
+DATA=test_example.py
+GTEST_OUTPUT=xml:/home/rhea31/please-demo/plz-out/tmp/example_test._test/run_1/test.results
+HOME=/home/rhea31/please-demo/plz-out/tmp/example_test._test/run_1
+LANG=en_GB.UTF-8
+NAME=example_test
+OS=linux
+PATH=/home/rhea31/.please:/usr/local/bin:/usr/bin:/bin
+PEX_NOCACHE=true
+PKG=
+PKG_DIR=.
+RESULTS_FILE=/home/rhea31/please-demo/plz-out/tmp/example_test._test/run_1/test.results
+TEST=/home/rhea31/please-demo/plz-out/tmp/example_test._test/run_1/example_test.pex
+TEST_ARGS=
+TEST_DIR=/home/rhea31/please-demo/plz-out/tmp/example_test._test/run_1
+TMPDIR=/home/rhea31/please-demo/plz-out/tmp/example_test._test/run_1
+TMP_DIR=/home/rhea31/please-demo/plz-out/tmp/example_test._test/run_1
+TOOL=/usr/bin/python3
+TOOLS=/usr/bin/python3
+XARCH=x86_64
+XOS=linux
+_TEST_ID=A21pNqi6VTJjDRx4
+$TOOL -S $TEST
+18:33:56.728   DEBUG: Storing //:example_test: .test_results_example_test in dir cache...
+18:33:56.729    INFO: Shutting down cache workers...
+18:33:56.730   DEBUG: Shut down all cache workers
+18:33:56.731   DEBUG: Metric recorded: go_gc_duration_seconds{quantile="0"} 5.0507e-05
+18:33:56.731   DEBUG: Metric recorded: go_gc_duration_seconds{quantile="0.25"} 0.000112475
+18:33:56.731   DEBUG: Metric recorded: go_gc_duration_seconds{quantile="0.5"} 0.000288842
+18:33:56.731   DEBUG: Metric recorded: go_gc_duration_seconds{quantile="0.75"} 0.000375283
+18:33:56.731   DEBUG: Metric recorded: go_gc_duration_seconds{quantile="1"} 0.000502057
+18:33:56.731   DEBUG: Metric recorded: go_gc_duration_seconds_sum 0.002910046
+18:33:56.731   DEBUG: Metric recorded: go_gc_duration_seconds_count 11
+18:33:56.731   DEBUG: Metric recorded: go_goroutines 15
+18:33:56.731   DEBUG: Metric recorded: go_info{version="go1.24.1"} 1
+18:33:56.731   DEBUG: Metric recorded: go_memstats_alloc_bytes 8.075608e+06
+18:33:56.731   DEBUG: Metric recorded: go_memstats_alloc_bytes_total 3.1397784e+07
+18:33:56.731   DEBUG: Metric recorded: go_memstats_buck_hash_sys_bytes 1.46044e+06
+18:33:56.731   DEBUG: Metric recorded: go_memstats_frees_total 123446
+18:33:56.731   DEBUG: Metric recorded: go_memstats_gc_sys_bytes 3.40808e+06
+18:33:56.731   DEBUG: Metric recorded: go_memstats_heap_alloc_bytes 8.075608e+06
+18:33:56.731   DEBUG: Metric recorded: go_memstats_heap_idle_bytes 4.83328e+06
+18:33:56.731   DEBUG: Metric recorded: go_memstats_heap_inuse_bytes 1.1026432e+07
+18:33:56.731   DEBUG: Metric recorded: go_memstats_heap_objects 37383
+18:33:56.731   DEBUG: Metric recorded: go_memstats_heap_released_bytes 3.866624e+06
+18:33:56.731   DEBUG: Metric recorded: go_memstats_heap_sys_bytes 1.5859712e+07
+18:33:56.731   DEBUG: Metric recorded: go_memstats_last_gc_time_seconds 1.7591510358193014e+09
+18:33:56.731   DEBUG: Metric recorded: go_memstats_lookups_total 0
+18:33:56.731   DEBUG: Metric recorded: go_memstats_mallocs_total 160829
+18:33:56.731   DEBUG: Metric recorded: go_memstats_mcache_inuse_bytes 9664
+18:33:56.731   DEBUG: Metric recorded: go_memstats_mcache_sys_bytes 15704
+18:33:56.731   DEBUG: Metric recorded: go_memstats_mspan_inuse_bytes 204000
+18:33:56.731   DEBUG: Metric recorded: go_memstats_mspan_sys_bytes 228480
+18:33:56.731   DEBUG: Metric recorded: go_memstats_next_gc_bytes 1.1400138e+07
+18:33:56.731   DEBUG: Metric recorded: go_memstats_other_sys_bytes 2.052488e+06
+18:33:56.731   DEBUG: Metric recorded: go_memstats_stack_inuse_bytes 917504
+18:33:56.731   DEBUG: Metric recorded: go_memstats_stack_sys_bytes 917504
+18:33:56.731   DEBUG: Metric recorded: go_memstats_sys_bytes 2.3942408e+07
+18:33:56.731   DEBUG: Metric recorded: go_threads 14
+18:33:56.732   DEBUG: Metric recorded: plz_command_invocation{ci="false",command="test",version="17.19.1"} 1
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="0.5"} 3
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="1"} 5
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="2"} 5
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="4"} 5
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="8"} 6
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="16"} 7
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="32"} 9
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="64"} 9
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="128"} 17
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="256"} 20
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="512"} 20
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="1024"} 23
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="2048"} 24
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="4096"} 25
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="8192"} 25
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="16384"} 25
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_bucket{ci="false",version="17.19.1",le="+Inf"} 25
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_sum{ci="false",version="17.19.1"} 7151
+18:33:56.732   DEBUG: Metric recorded: plz_local_target_build_duration_count{ci="false",version="17.19.1"} 25
+18:33:56.732   DEBUG: Metric recorded: process_cpu_seconds_total 1.38
+18:33:56.732   DEBUG: Metric recorded: process_max_fds 1.048575e+06
+18:33:56.732   DEBUG: Metric recorded: process_open_fds 12
+18:33:56.732   DEBUG: Metric recorded: process_resident_memory_bytes 3.262464e+07
+18:33:56.732   DEBUG: Metric recorded: process_start_time_seconds 1.75915103302e+09
+18:33:56.732   DEBUG: Metric recorded: process_virtual_memory_bytes 1.280995328e+09
+18:33:56.732   DEBUG: Metric recorded: process_virtual_memory_max_bytes 1.8446744073709552e+19
